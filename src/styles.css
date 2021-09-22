@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;500;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.testMiq {
+    background: red;
+}
+
+.card {
+    @apply bg-white rounded overflow-hidden shadow-md relative;
+}
+
+.badge {
+    @apply bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2;
+}
+
+.btn {
+    @apply rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider;
+}
+
+
+
+/* Stitches Miq */
+
+main {
+    counter-reset: unidades; /* Tiene que estar definido fuera del contenedor de la numeracion */
+}
+
+.menu-secciones {
+    display: flex;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.menu-secciones li {
+    @apply px-4 py-2 hover:bg-black text-black hover:text-white rounded my-3 mx-2 cursor-pointer;
+}
+
+.capsula {
+    @apply flex p-3 rounded-lg hover:bg-gray-300 cursor-pointer;
+}
+
+.capsula::before {
+    counter-increment: unidades;
+    content: counter(unidades);
+
+    font-size: 1.3em;
+    color: rgb(255, 255, 255);
+}
+
+.abril-cerral {
+    @apply w-full h-1 bg-black absolute right-4;
+}
+
+.cap-cont-textos {
+    @apply flex flex-col w-4/6 mr-4;
+}
+
+.cap-cont-tex-h4 {
+    @apply text-2xl text-black text-right mb-2;
+}
+
+.cap-cont-tex-p {
+    @apply text-xs text-white text-right font-light leading-4;
+}
