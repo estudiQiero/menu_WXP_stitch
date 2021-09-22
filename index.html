@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="/build/styles.css">
+</head>
+
+<body class="cursor-default">
+    <!-- menu nav -->
+    <nav class="container-full flex items-center justify-between py-5 m-4 relative">
+        <h2 class="text-3xl ml-6">Qiero</h2>
+        <div class="bg-green-300 p-2 mr-4">
+            <div id="abrir-menu" class="w-6 h-4 relative cursor-pointer">
+                <div class="abril-cerral top-0"></div>
+                <div class="abril-cerral top-2"></div>
+                <div class="abril-cerral top-4"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- selector -->
+    <div
+        class="max-w-sm sm:max-w-xl m-4 border-4 border-black rounded-l-xl rounded-b-xl shadow-2xl absolute right-4 top-2 overflow-hidden">
+        <header class="bg-white">
+            <div class="flex justify-between">
+                <p class="py-2 px-4 text-sm text-gray-400 bg-white">Secciones</p>
+                <div id="cerrar-menu" class="w-6 h-6 relative cursor-pointer">
+                    <div class="abril-cerral rotate-45 top-4"></div>
+                    <div class="abril-cerral -rotate-45 top-4"></div>
+                </div>
+            </div>
+
+            <ul class="menu-secciones">
+                <li>Principales</li>
+                <li>Marketing</li>
+                <li>Xtras</li>
+            </ul>
+        </header>
+        <main class="p-4 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- header -->
+            <div class="capsula">
+                <div class="cap-cont-textos">
+                    <h4 class="cap-cont-tex-h4">Header</h4>
+                    <p class="cap-cont-tex-p">Cabecera, logotipo, y menú navegación.</p>
+                </div>
+                <div class="w-2/6">
+                    <img class="h-auto w-full" src="/img/wxp-esq_header.svg" alt="esquema header webxpress builder">
+                </div>
+            </div>
+
+            <!-- Hero -->
+            <div class="capsula">
+                <div class="cap-cont-textos">
+                    <h4 class="cap-cont-tex-h4">Hero</h4>
+                    <p class="cap-cont-tex-p">Contenido principal. Producto estrella.</p>
+                </div>
+                <div class="w-2/6">
+                    <img class="h-auto w-full" src="/img/wxp-esq_hero.svg" alt="esquema header webxpress builder">
+                </div>
+            </div>
+
+            <!-- Producto -->
+            <div class="capsula">
+                <div class="cap-cont-textos">
+                    <h4 class="cap-cont-tex-h4">Producto</h4>
+                    <p class="cap-cont-tex-p">Producto con foto y descripción.</p>
+                </div>
+                <div class="w-2/6">
+                    <img class="h-auto w-full" src="/img/wxp-esq_producto.svg" alt="esquema header webxpress builder">
+                </div>
+            </div>
+
+            <!-- Articulos -->
+            <div class="capsula">
+                <div class="cap-cont-textos">
+                    <h4 class="cap-cont-tex-h4">Artículos</h4>
+                    <p class="cap-cont-tex-p">Intro explicativa. Textos de interés promocional.
+                    </p>
+                </div>
+                <div class="w-2/6">
+                    <img class="h-auto w-full" src="/img/wxp-esq_articulos.svg" alt="esquema header webxpress builder">
+                </div>
+            </div>
+
+            <!-- Precios -->
+            <div class="capsula">
+                <div class="cap-cont-textos">
+                    <h4 class="cap-cont-tex-h4">Precios</h4>
+                    <p class="cap-cont-tex-p">Xtension de precios y ofertas de los productos.
+                        Descripción.
+                    </p>
+                </div>
+                <div class="w-2/6">
+                    <img class="h-auto w-full" src="/img/wxp-esq_precios.svg" alt="esquema header webxpress builder">
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="capsula">
+                <div class="cap-cont-textos">
+                    <h4 class="cap-cont-tex-h4">Footer</h4>
+                    <p class="cap-cont-tex-p">Pie de página genérico. Enlaces a RRSS y páginas
+                        legales.</p>
+                </div>
+                <div class="w-2/6">
+                    <img class="h-auto w-full" src="/img/wxp-esq_footer.svg" alt="esquema header webxpress builder">
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Fin Selector -->
+</body>
+
+</html>
