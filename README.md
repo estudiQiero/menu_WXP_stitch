@@ -1,14 +1,15 @@
 # menu_WXP_stitch
 
-Menú desplegable basado en Tailwindcss.
+Menú desplegable creado con el framework Tailwind CSS y VueJS.
 
-La idea es implementar el menu en el framework "Stitches" de Amie Chen, para crear esquemas rápidos de páginas web. Se trata de un menú más gráfico basado en cápsulas, que sustituiría el sencillo, aunque práctico, menú que incorpora su fabuloso framework.
+La idea es implementar el menu en la web app "Stitches, A web templates generator with tailwind.css" de Amie Chen https://builtwithtailwind.com/site/stitches, para crear esquemas rápidos de páginas web.
 
-Por el momento se ha trabajado el aspecto gráfico, que está resulteo en un 98%.
+Es un trabajo interno mio que que sustituye el sencillo, aunque práctico, menú que incorpora Stitches. La idea es lograr un menú más gráfico, ordenado e intuitivo, basado en cápsulas seleccionables.
 
-Falta añadir la interactividad. Se intentará trabajar el proyecto con el framework de JS, Vue.
+El aspecto gráfico  está resulteo en un 90%, a falta del contenido de las secciones de menú adicionales de "Marketing", "Xtras" y "Ver todos".
 
-Se añadirán, entonces, el resto de capas del menú.
+La interactividad de los elementos se realiza mdiante el framework de JS, Vue.
 
-Posteriormente se integrará en "Stitches" original y trataré de abrir un branches para subir las modificaciones al Git de Amie.
+Se añadirán, después, el resto de capas del menú.
 
+Posteriormente se pasará al inglés y se intentará integrar en "Stitches" original, abriendo una rama para subir las modificaciones al Git de Amie.
