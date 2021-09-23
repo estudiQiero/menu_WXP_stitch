@@ -6,30 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <link rel="stylesheet" href="/build/styles.css">
 </head>
 
 <body class="cursor-default">
+    <main id="app">
     <!-- menu nav -->
     <nav class="container-full flex items-center justify-between py-5 m-4 relative">
         <h2 class="text-3xl ml-6">Qiero</h2>
-        <div class="bg-green-300 p-2 mr-4">
-            <div id="abrir-menu" class="w-6 h-4 relative cursor-pointer">
-                <div class="abril-cerral top-0"></div>
-                <div class="abril-cerral top-2"></div>
-                <div class="abril-cerral top-4"></div>
+        <div v-on:click='verMenu = !verMenu' class="p-2 mr-6 cursor-pointer flex justify-center items-center">
+            <div class="w-6 h-4 relative">
+                <div class="abril-cerral top-0 left-0 absolute"></div>
+                <div class="abril-cerral top-2 left-0 absolute"></div>
+                <div class="abril-cerral top-4 left-0 absolute"></div>
             </div>
         </div>
     </nav>
 
     <!-- selector -->
-    <div
-        class="max-w-sm sm:max-w-xl m-4 border-4 border-black rounded-l-xl rounded-b-xl shadow-2xl absolute right-4 top-2 overflow-hidden">
+    <div v-if="verMenu"
+        class="max-w-sm sm:max-w-xl m-4 border-4 border-black rounded-l-xl rounded-b-xl shadow-2xl absolute right-4 top-4 overflow-hidden">
         <header class="bg-white">
             <div class="flex justify-between">
                 <p class="py-2 px-4 text-sm text-gray-400 bg-white">Secciones</p>
-                <div id="cerrar-menu" class="w-6 h-6 relative cursor-pointer">
+                <div v-on:click='verMenu = !verMenu' class="w-6 h-6 relative cursor-pointer">
                     <div class="abril-cerral rotate-45 top-4"></div>
                     <div class="abril-cerral -rotate-45 top-4"></div>
                 </div>
@@ -117,6 +118,10 @@
         </main>
     </div>
     <!-- Fin Selector -->
+
+    </main>
+
+    <script src="app.js"></script>
 </body>
 
 </html>

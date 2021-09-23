@@ -11,3 +11,4 @@ Falta añadir la interactividad. Se intentará trabajar el proyecto con el frame
 Se añadirán, entonces, el resto de capas del menú.
 
 Posteriormente se integrará en "Stitches" original y trataré de abrir un branches para subir las modificaciones al Git de Amie.
+
